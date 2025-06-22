@@ -1,3 +1,4 @@
+import 'package:drawer_app/components/app_drawer.dart';
 import 'package:flutter/material.dart';
 import 'package:go_router/go_router.dart';
 
@@ -13,6 +14,7 @@ class DetailScreen extends StatelessWidget {
           'Detail Screen ${id != null ? "with ID $id" : "without ID"}',
         ),
       ),
+      drawer: AppDrawer(),
       body: Center(
         child: Column(
           mainAxisAlignment: MainAxisAlignment.center,
